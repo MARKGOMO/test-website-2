@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Container*/
+.bodydiv{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100vh; 
+}
+
+.bodydiv .form-signin img{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin: auto;
+}
+
+.bodydiv .form-signin h1{
+    font-family: Arial, Helvetica, sans-serif;;
+    margin-bottom: 0%;
+}
+
+.bodydiv .form-signin .inputBox {
+    position: relative;
+    margin-top: 0;
+}
+
+.bodydiv .form-signin .inputBox span[type="email"]{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    align-self: flex-start;
+    letter-spacing: 1px;
+    position: relative;
+    top: 5px;
+}
+
+.bodydiv .form-signin .inputBox span[type="pass"]{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    align-self: flex-start;
+    letter-spacing: 1px;
+    position: relative;
+    top: 10px;
+}
+
+.bodydiv .form-signin .inputBox input[type="email"]{
+    padding: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 50%;
+    margin-top: 15px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+.bodydiv .form-signin .inputBox input[type="password"],
+.bodydiv .form-signin .inputBox input[type="text"] {
+    padding: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 50%;
+    margin-top: 15px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+.bodydiv .form-signin .inputBox img[src="eye-close.png"] {
+    position: absolute;
+    top: 60%;
+    right: 12px; 
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}  
+
+.bodydiv .form-signin .inputBox img[src="eye-open.png"] {
+    position: absolute;
+    top: 61%;
+    right: 12px; 
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}   
+
+.bodydiv .form-signin button[type="submit"]{
+    background: #2B3792;
+    color: #ffff;
+    outline: none;
+    border-radius: 0.3rem;
+    font-weight: 500;
+}
+
+.bodydiv .form-signin .forgot{
+    text-align: end;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #328BD9;
+}
+
+.bodydiv .form-signin .checkbox {
+    padding-top: 3%;
+}
+
+.bodydiv .form-signin .checkbox input[type="checkbox"] {
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #328BD9;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+}
+
+.bodydiv .form-signin .checkbox input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    background-color: #328BD9;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.bodydiv .form-signin .checkbox input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+.bodydiv .form-signin .checkbox label{
+    font-size: 15px;
+    color: #BBBABA;
+    cursor: pointer;
+}
+
+.bodydiv .form-signin .message-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    position: relative;
+    padding-top: 25px;
+}
+
+.bodydiv .form-signin .message-icon img{
+    cursor: pointer;
+    margin-right: 0%;
+}
+
+@media screen and (max-width: 1300px) {
+    .bodydiv{
+        display:flex;
+        width: 100%;
+        height: 100%; 
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .bodydiv .form-signin{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .slider-container{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .slider-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*Slider*/
+
+.bodydiv .carouseldiv{
+    position: relative;
+    display: flex;
+    min-width: 945px;
+    max-width: 945px;
+    height: 607px;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    margin: 0%;
+    margin-left: 10px;
+    flex-direction: column;
+    align-self: flex-start;
+    background-size: 104%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*carousel slider*/
+.bodydiv .carouseldiv .carousel .carousel-inner{
+    position: absolute;
+    bottom: 10%;
+    top: 0;
+    width: 100%;
+    height: 530px;
+    display: flex;
+    justify-content: center;    
+}
+
+.bodydiv .carouseldiv .carousel{
+    position: absolute;
+    bottom: 10%;
+    top: 0;
+    width: 100%;    
+    height: 530px;
+    display: flex;
+    justify-content: center;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-indicators{
+    position: absolute;
+    bottom: 0px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-indicators li {
+    border-radius: 50px;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-indicators li.active {
+    width: 30px;
+    height: 10px;
+    margin: 0 3px;
+    transition: all 0.3s ease;
+}
+
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item img{
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card{
+    background: linear-gradient(135deg, rgba(255, 255, 255 ,0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(1000px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 input{
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    width: 220px;
+    color: #ffff;
+    pointer-events: none;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 input::placeholder {
+    color: #ffff;
+  }
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 button{
+    position: absolute;
+    top: 8px;
+    left: 275px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 12px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 button:nth-child(2) {
+    left: 250px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 button:focus,
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 button:active {
+    outline: none; /* Hide the focus/active outline */
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 #time{
+    position: absolute;
+    top: 30px;
+    background-color: transparent;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 50px;
+    border: none;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1 #date{
+    position: absolute;
+    top: 100px;
+    background-color: transparent;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff;
+    border: none;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card2 .card-body img[id="representation"]{
+    position: absolute;
+    top: 0px;  
+    left: 10px;  
+    width: 170px; 
+    height: 90px;  
+ }
+
+ .bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card2 .card-body span[id="temp"]{
+    position: absolute;
+    top: -10px;
+    left: 180px;
+    color: #ffff;
+    font-size: 85px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 700px;
+    height: 130px;
+ }
+
+ .bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card2 .card-body h7{
+    position: absolute;
+    top: 75px;  
+    left: 16px;  
+    width: 150px;  
+    font-weight: bold;
+    text-align: center;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card2 .card-body img{
+    position: absolute;
+    top: 105px;  
+    left: 50px;  
+    width: 15px;
+    height: auto;
+ }
+
+ .bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card2 .card-body span{
+    position: absolute;
+    top: 105px;  
+    left: 70px;  
+    width: 20%;
+    font-weight: bold;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+ }
+
+ .bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card2 .card-body a{
+    position: absolute;
+    top: 94px;  
+    left: 200px; 
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 10px; 
+    color: black;
+    width: auto;    
+    height: auto;
+    background: #349ff1;
+ }
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card3 .card-body .card-title{
+   position: absolute;
+   top: 10px;    
+   color: #ffff;
+   width: 350px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card3 .card-body p{
+    position: relative;
+    top: 100px;    
+    color: #ffff;
+    line-height: 16px;
+    font-size: 14px;
+ }
+
+ .bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card3 .card-body a{
+    position: absolute;
+    top: 260px;  
+    left: 250px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    width: auto;    
+    height: 12%;
+    background: rgb(157,97,255);
+    background: linear-gradient(354deg, rgba(157,97,255,1) 0%, rgba(255,255,255,1) 4%, rgba(1,187,238,1) 59%);
+ }
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card4 .card-body .card-title,
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card5 .card-body .card-title {
+  position: absolute;
+  top: 15px;
+  color: #ffff;
+  line-height: 20px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card4 .card-body p,
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card5 .card-body p {
+  position: absolute;
+  top: 47px;
+  width: 460px;
+  color: #ffff;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card4 .card-body a,
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card5 .card-body a {
+  position: absolute;
+  top: 110px;
+  left: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  width: auto;
+  height: 22%;
+  background: rgb(157, 97, 255);
+  background: linear-gradient(354deg, rgba(157, 97, 255, 1) 0%, rgba(255, 255, 255, 1) 4%, rgba(1, 187, 238, 1) 59%);
+}
+
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card1{
+    position: absolute;
+    height: 130px;
+    width: 400px;
+    top: 15px;
+    margin: 15px;
+    margin-top: 0;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card2{
+    position: absolute;
+    height: 130px;
+    width: 495px;
+    top: 15px;
+    left: 430px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card3{
+    position: absolute;
+    width: 380px;
+    height: 320px;
+    margin: 15px;
+    margin-top: 0;
+    top: 160px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card4{
+    position: absolute;
+    width: 515px;
+    height: 152px;
+    top: 160px;
+    left: 410px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .card5{
+    position: absolute;
+    width: 515px;
+    height: 152px;
+    top: 326px;
+    left: 410px;
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .first-text{
+    position: relative;
+    top: 120px;
+    left: 80px;
+    width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: rgb(255, 241, 249)
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item .second-text{
+    position: relative;
+    top: 140px;
+    left: 80px;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: rgb(255, 213, 237)
+}
+
+.bodydiv .carouseldiv .carousel .carousel-inner .carousel-item button[type="btn1"]{
+    position: relative;
+    top: 170px;
+    left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(157,97,255);
+    background: linear-gradient(354deg, rgba(157,97,255,1) 0%, rgba(255,255,255,1) 4%, rgba(1,187,238,1) 59%);
+    color: white;
+    color: white;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/*button icon*/
+.bodydiv .carouseldiv .social-links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.bodydiv .carouseldiv .social-links a{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff;
+    margin: 0 20px;
+    border-radius: 7px;
+    border: 2px solid #1b3887 ;
+    justify-content: center;
+    background-color: #2B3792;
+    position: relative;
+    background: rgb(255,255,255);
+    background: linear-gradient(309deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(27,56,135,1) 54%);
+}
+
+.bodydiv .carouseldiv .social-links a .fab{
+    font-size: 15px;
+    padding-top: 12px;
+    color: rgb(252,203,246);
+    color: linear-gradient(344deg, rgba(252,203,246,1) 0%, rgba(255,255,255,1) 34%);
+}
+
+
+
+
+
+
